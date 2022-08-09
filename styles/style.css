@@ -159,13 +159,15 @@ font-size: 25px;
 
 
     }
-    @media (max-width:370px)
+    @media (max-width:375px)
     {
         .hoverme{
             font-size: 70px;
+            line-height: 50px;
         }
         .hoverme2{
-            font-size: 80px;
+            font-size: 50px;
+            line-height: 50px;
         }
      
         .name, .surname, .frontend,.developer{
