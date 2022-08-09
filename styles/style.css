@@ -1,0 +1,165 @@
+/*font-family: open-sans,sans-serif;
+font-weight: 400;
+font-style: normal;*/
+.container{
+    max-width: 100%;
+}
+
+.name, .surname, .frontend,.developer{
+    margin-left: 50px;
+}
+
+
+ .hoverme, .hoverme2{
+font-family: bebas-neue, sans-serif;
+font-weight: 400;
+font-style: normal;
+color:  #777;
+font-size: 200px;
+line-height: 150px;
+
+}
+.hoverme:hover,  .hoverme2:hover{
+    color: rgb(196, 196, 196);
+}
+
+
+.hoverme2{
+    font-size: 180px;
+}
+
+.aboutme{
+    display: block;
+    max-width: 300px;
+    margin-top: 50px;
+    margin-right: 150px;
+    margin-left: 20px;
+color: #aaa;
+opacity: 0.9;
+font-family: open-sans,sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 18px;
+line-height: 24px;
+}
+.firstword{
+    color: #CB450C;
+opacity:;
+font-family: open-sans,sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 25px;
+}
+.frontendabout{
+    display: flex;  
+    justify-content: space-between;
+}
+
+@media (max-width:1450px)
+    {
+        .hoverme{
+            font-size: 150px;}
+    }
+    @media (max-width:1200px)
+    {
+        .hoverme{
+            font-size: 140px;}
+            .hoverme2{
+                font-size: 120px;
+                
+            }
+    }
+    @media (max-width:1030px)
+    {
+        .hoverme{
+            font-size: 130px;}
+    }
+    @media (max-width:1100px)
+    {
+        .hoverme{
+            font-size: 120px;}
+    }
+    @media (max-width:1010px)
+    {
+        .hoverme{
+            font-size: 110px;}
+            .hoverme2{
+                font-size: 100px;
+                
+            }
+    }
+    @media (max-width:920px)
+    {   
+        .hoverme{
+            font-size: 100px;}
+            .frontendabout{
+                display: flex;  
+                justify-content: space-between;
+                flex-direction: column;
+            }
+           
+    }
+
+    
+    @media (max-width:840px)
+    {
+        .hoverme{
+            font-size: 90px;}
+         
+            
+    }
+ 
+    @media (max-width:720px)
+    {
+        .hoverme{
+            font-size: 100px;
+        }
+        .name, .surname, .frontend,.developer{
+            margin-left: 20px;
+        }
+         
+    }
+    @media (max-width:650px)
+    {
+        .hoverme2{
+            font-size: 120px;
+            
+        }
+        .name, .surname, .frontend,.developer{
+            margin-left: 20px;
+        }
+         
+    }
+    @media (max-width:500px)
+    {
+        .hoverme{
+            font-size: 70px;
+        }
+        .hoverme2{
+            font-size: 90px;
+        }
+       
+        .name, .surname, .frontend,.developer{
+            margin-left: 20px;
+        }
+  
+
+
+    }
+    @media (max-width:370px)
+    {
+        .hoverme{
+            font-size: 70px;
+        }
+        .hoverme2{
+            font-size: 80px;
+        }
+     
+        .name, .surname, .frontend,.developer{
+            margin-left: 20px;
+        }
+  
+
+
+    }
+    
