@@ -76,7 +76,13 @@ font-size: 25px;
 .dropdownimage{
     opacity: 0.9;
 }
-
+.panther{
+    transition: all 500ms ease;
+    transform-origin: center;
+}
+.panther:hover{
+    transform: rotate(360deg);
+}
 
 
 
@@ -175,6 +181,7 @@ font-size: 25px;
     .namesurname{
         flex-direction: column !important;
     }
+    .panther{margin-top: 30px !important;}
     
     .aboutme{
         margin-top: 30px;
@@ -219,7 +226,8 @@ font-size: 25px;
         .hoverme2{
             font-size: 130px;
             line-height: 100px;   
-        }   
+        }  
+        
     }
     @media (max-width:520px)
     {
