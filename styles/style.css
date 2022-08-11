@@ -86,9 +86,13 @@ transition: all 200ms ease;}
     border-bottom: 4px solid var(--color-header-border);*/}
 .photos{
     margin-top: 100px;
-    margin-right:;
-    max-width: 500px;
-    height: auto;}
+    margin-left: 60px;
+    margin-right: 50px;
+    height:450px;
+    max-width:300px;
+    position: relative;
+    border-radius: 2px;
+    }
 @media (max-width:1800px)
     {
         .hoverme{
@@ -270,3 +274,33 @@ transition: all 200ms ease;}
         left:-10%;
         top:-10%;}
 }
+
+.mainphoto{
+    border-radius: 2px;
+    background-image:url(/images/weather-app.png);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+   
+}
+.background-1{
+    border-radius: 2px;
+    background:var(--icons);
+    background-size:cover;
+    background-position: center;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    opacity: 0.5;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease;
+}
+
+.background-1:hover{ clip-path: polygon(0 0, 0 0, 0 99%, 0 100%);}
