@@ -178,6 +178,7 @@ font-size: 25px;}
     }
 @media (max-width:1220px)
     {
+     
         .hoverme{
             font-size: 140px;
             line-height: 130px;}
@@ -203,12 +204,6 @@ font-size: 25px;}
     .mainlinks{justify-content: end !important;}
     .frontendabout{ display: flex;  
         flex-direction: column !important;}}
-
-@media(max-width:835)
-    {
-    .
-
-}
  @media (max-width:765px)
     {
     .hoverme{
@@ -228,10 +223,8 @@ font-size: 25px;}
             font-size: 130px;
             line-height: 100px;}}
 @media (max-width:520px)
-    {.projectheading{
-        font-size: ;
-    }
-   
+    {
+  
     .hoverme{
             font-size: 80px;}
     .hoverme2{
@@ -298,11 +291,18 @@ font-size: 25px;}
         top:-10%;}
 }
 
+.i-3{ color: var(--links);
+font-size: 25px;
+margin: 5px;}
+.i-3:hover{color: var(--yellow);}
 .projects{
     background-color: var(--background-2);
     font-family: source-han-sans-simplified-c, sans-serif;
     font-weight: 300;
     font-style: normal;}
+.icon-2{
+    margin: 10px;
+}
 .i-2{color:var(--yellow);
     line-height: 90px;
     font-size: 50px;
@@ -311,7 +311,6 @@ font-size: 25px;}
 .projectcard{
    max-width: 350px;
    text-align: center;}
-.i-3{}
 .projectcat{
    position: absolute;
    width: 35%;
@@ -370,7 +369,7 @@ color: #961d6e;}
     color: var(--artcles);
     text-align: center;
     font-size: 12px;}
-.icon-3{
+.icon-4{
     width: 80px;
     height: 80px;
     background-color: var(--icons);
@@ -381,14 +380,15 @@ color: #961d6e;}
     background-color: var(--background-2);
     border-bottom: solid 1px var(--borderforbackground-2);}
 .contact-cat{
-    max-width: 250px;
+    max-width: 300px;
     height: auto;}
-.i-3{
+.i-4{
     color: white;
     font-size: 35px;
     line-height: 75px;
     transition: all 200ms ease;}
-.i-3:hover{color: var(--icons);}
+.i-4:hover{
+    color: var(--links);}
 .email{
     font-size: 15px;
     text-align: center;
@@ -409,5 +409,4 @@ color: #961d6e;}
     max-width: 70px;
     height: auto;}
 .ukraine{
-  
     color: var(--borderforbackground-2);}
