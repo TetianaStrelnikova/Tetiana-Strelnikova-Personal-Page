@@ -315,7 +315,8 @@ transform: scale(1.2);}
     transition:all 600ms ease;
     opacity: 0.9;}
 .projectcard{
-   max-width: 350px;
+   max-width: 380px;
+   height: auto;
    text-align: center;}
 .projectcat{
    position: absolute;
@@ -327,7 +328,6 @@ transform: scale(1.2);}
 .projectimage{
     
     position:relative;
-    border-radius: 3px;
     border:solid 10px;
     height: 100%;
     width: 100%;}
@@ -412,5 +412,4 @@ transition: all 300ms ease;}
     color: var(--borderforbackground-2);}
 .skill{
    
-    margin-right: 3%;
-}
+    margin-right: 3%;}
