@@ -93,7 +93,7 @@ text-decoration: underline solid 2px var(--dropdown-hover);}
     position: relative;
     border-radius: 2px;
     }
-@media (max-width:1800px)
+@media (max-width:1850px)
     { 
         .hoverme{
             font-size: 230px;
@@ -119,7 +119,7 @@ text-decoration: underline solid 2px var(--dropdown-hover);}
  @media (max-width:1750px)
     {
                     .hoverme{
-                        font-size: 200px;
+                        font-size: 180px;
                         line-height: 180px;}
                         .hoverme2
                         {
@@ -130,7 +130,7 @@ text-decoration: underline solid 2px var(--dropdown-hover);}
 @media (max-width:1600px)
     {
         .hoverme{
-            font-size: 200px;
+            font-size: 180px;
             line-height: 180px;}
             .hoverme2
             {
@@ -152,14 +152,14 @@ text-decoration: underline solid 2px var(--dropdown-hover);}
                 line-height: 200px;
             }
             .aboutme{margin-right: 45px;}}
-@media (max-width:1300px)
+@media (max-width:1350px)
     {
         .hoverme{
             font-size: 155px;
             line-height: 150px;}
             .hoverme2
             {
-                font-size: 190px;
+                font-size: 180px;
                 line-height: 160px;
             }  
             .projectpair{
