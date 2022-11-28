@@ -48,7 +48,6 @@ line-height: 24px;}
 .firstword{
 color: var(--color-header-border);
 text-decoration: underline;
-opacity:;
 font-family: open-sans,sans-serif;
 font-weight: 400;
 font-style: normal;
@@ -80,10 +79,10 @@ font-size: 25px;}
     padding-bottom: 10px;}
 .nav-link:hover{
     color: var(--links);
-text-decoration: underline solid 2px var(--dropdown-hover);}
+    text-decoration: underline solid 2px var(--dropdown-hover);}
 .navbar{
     background: var(--color-bg-grey);
-    border-bottom: 4px solid var(--color-header-border);*/}
+    border-bottom: 4px solid var(--color-header-border);}
 .photos{
     margin-top: 100px;
     margin-left: 60px;

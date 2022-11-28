@@ -148,6 +148,11 @@ h3 a {
 h3 a:hover {
   color: #66FCF1;
 }
+.projectlinks i {
+  font-size: 22px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
 footer {
   min-height: 300px;
 }
