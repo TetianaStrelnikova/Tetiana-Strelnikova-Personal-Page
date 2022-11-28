@@ -1,0 +1,58 @@
+@color-bg-grey:#171321;
+@color-header-border:#961d6e;
+@yellow:#FFE742;
+@dropdown:#961d6e22;
+@dropdown-hover:#ff85d6;
+@background-2:#0d304a;
+@borderforbackground-2:#02a7cc;
+@icons:#d459ab;
+@links:#04d2ff;
+@artcles:#b1acb9;
+@blog-heading:#66FCF1;
+@blog-text:#C4C6C7;
+@blog-heading-dark:#45A29F;
+@blog-background:#101116;
+@blog-article-bg:#10141a;
+@blog-font-2: 'Fira Code', monospace;;
+@blog-font: 'Source Code Pro', monospace;
+@blog-red:#b3032f;
+.shadow{
+    color: #fff;
+    box-shadow: 0 0 2px #fff, 0 0 10px #fff, 0 0 20px #45A29F, 0 0 30px #45A29F,
+      0 0 40px #45A29F, 0 0 50px #45A29F;
+    -webkit-animation: blink 0.7s infinite alternate;
+    animation: blink 0.7s infinite alternate;}
+    @white-shadow: #ffffff 1px 1px 20px;
+    .neonText {
+        color: #66FCF1;
+        text-shadow:
+          0 0 2px #fff,
+          0 0 10px #fff,
+          0 0 40px #fff,
+          0 0 80px #45A29F,
+          0 0 150px #45A29F,
+          0 0 200px #45A29F,
+          0 0 300px #45A29F,
+          0 0 500px #45A29F;
+      }
+    .h1{color: @blog-heading;
+        font-weight: 100;
+        font-family: @blog-font;
+        font-size: 50px;}
+    .h2{color: @blog-heading-dark;
+        font-weight: 300;
+        font-family: @blog-font;
+        font-size: 30px;}
+    .h3{color:@blog-red;
+            font-weight: 300;
+            font-family: @blog-font;
+            font-size: 30px;}
+    .p{ font-size: 18px;
+        font-family: @blog-font;
+        font-weight: 300;
+        color:@blog-text;}
+    .link{ text-decoration: none;
+    color: @blog-heading-dark;
+    transition:300ms;
+    &:hover{ 
+    .neonText;}}

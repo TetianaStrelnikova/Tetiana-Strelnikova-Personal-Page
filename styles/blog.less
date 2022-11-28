@@ -1,0 +1,66 @@
+// out: "../styles/blog.css", compress: false, sourceMap: true
+@import "vars.less";
+
+
+body{
+    background-color: @blog-background;
+    margin: 0;
+    a{.link}
+}            
+header{
+    margin-left: 10%;
+    margin-top: 5%;
+    .logo{
+        max-height: 150px;
+        max-width: 150px;
+        border-radius: 50%;
+        background-color: @blog-heading-dark;
+        border-style: solid;
+        border-width: 1px;
+        border-color: lighten(@blog-background,60%);
+        
+        .shadow;
+        
+    
+    img{
+    border-radius: 50%;}
+    }
+    h1{.h1;
+    .neonText}
+    p{margin-left: 5%;
+       max-width: 60%;
+        .p}}
+.hello{margin-left: 20%;
+    margin-top: 5%;
+    h2{.h2;
+    .neonText}
+    p{.p;
+        margin-left: 5%;
+    max-width: 70%;}
+}
+.article{
+    padding: 2% 1%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: @blog-background;
+    background-color: @blog-article-bg;
+    .shadow;
+    margin: 0 auto;
+    margin-top: 5%;
+    display: flex;
+    max-width: 70%;
+    .logo{
+        margin: 2%;
+        max-width: 30%
+    }}
+ 
+    p{.p;
+        margin-left: 5%;}
+    h3{margin-left: 5%;
+        margin-top: 0%;
+        a{.h3;
+        &:hover{color: @blog-heading;}}
+    }
+footer{
+    min-height: 300px;
+}

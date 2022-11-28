@@ -1,0 +1,43 @@
+.shadow {
+  color: #fff;
+  box-shadow: 0 0 2px #fff, 0 0 10px #fff, 0 0 20px #45A29F, 0 0 30px #45A29F, 0 0 40px #45A29F, 0 0 50px #45A29F;
+  -webkit-animation: blink 0.7s infinite alternate;
+  animation: blink 0.7s infinite alternate;
+}
+.neonText {
+  color: #66FCF1;
+  text-shadow: 0 0 2px #fff, 0 0 10px #fff, 0 0 40px #fff, 0 0 80px #45A29F, 0 0 150px #45A29F, 0 0 200px #45A29F, 0 0 300px #45A29F, 0 0 500px #45A29F;
+}
+.h1 {
+  color: #66FCF1;
+  font-weight: 100;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 50px;
+}
+.h2 {
+  color: #45A29F;
+  font-weight: 300;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 30px;
+}
+.h3 {
+  color: #b3032f;
+  font-weight: 300;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 30px;
+}
+.p {
+  font-size: 18px;
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 300;
+  color: #C4C6C7;
+}
+.link {
+  text-decoration: none;
+  color: #45A29F;
+  transition: 300ms;
+}
+.link:hover {
+  color: #66FCF1;
+  text-shadow: 0 0 2px #fff, 0 0 10px #fff, 0 0 40px #fff, 0 0 80px #45A29F, 0 0 150px #45A29F, 0 0 200px #45A29F, 0 0 300px #45A29F, 0 0 500px #45A29F;
+}

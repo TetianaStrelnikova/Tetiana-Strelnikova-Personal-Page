@@ -1,0 +1,98 @@
+.shadow {
+  color: #fff;
+  box-shadow: 0 0 2px #fff, 0 0 10px #fff, 0 0 20px #45A29F, 0 0 30px #45A29F, 0 0 40px #45A29F, 0 0 50px #45A29F;
+  -webkit-animation: blink 0.7s infinite alternate;
+  animation: blink 0.7s infinite alternate;
+}
+.neonText {
+  color: #66FCF1;
+  text-shadow: 0 0 2px #fff, 0 0 10px #fff, 0 0 40px #fff, 0 0 80px #45A29F, 0 0 150px #45A29F, 0 0 200px #45A29F, 0 0 300px #45A29F, 0 0 500px #45A29F;
+}
+.h1 {
+  color: #66FCF1;
+  font-weight: 100;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 50px;
+}
+.h2 {
+  color: #45A29F;
+  font-weight: 300;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 30px;
+}
+.h3 {
+  color: #b3032f;
+  font-weight: 300;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 30px;
+}
+.p {
+  font-size: 18px;
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 300;
+  color: #C4C6C7;
+}
+.link {
+  text-decoration: none;
+  color: #45A29F;
+  transition: 300ms;
+}
+.link:hover {
+  color: #66FCF1;
+  text-shadow: 0 0 2px #fff, 0 0 10px #fff, 0 0 40px #fff, 0 0 80px #45A29F, 0 0 150px #45A29F, 0 0 200px #45A29F, 0 0 300px #45A29F, 0 0 500px #45A29F;
+}
+body {
+  width: 100%;
+  background-color: #101116;
+}
+body a {
+  text-decoration: none;
+  color: #45A29F;
+  transition: 300ms;
+}
+body a:hover {
+  color: #66FCF1;
+  text-shadow: 0 0 2px #fff, 0 0 10px #fff, 0 0 40px #fff, 0 0 80px #45A29F, 0 0 150px #45A29F, 0 0 200px #45A29F, 0 0 300px #45A29F, 0 0 500px #45A29F;
+}
+body .article {
+  padding: 5% 5%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #101116;
+  background-color: #10141a;
+  color: #fff;
+  box-shadow: 0 0 2px #fff, 0 0 10px #fff, 0 0 20px #45A29F, 0 0 30px #45A29F, 0 0 40px #45A29F, 0 0 50px #45A29F;
+  -webkit-animation: blink 0.7s infinite alternate;
+  animation: blink 0.7s infinite alternate;
+  margin: 0 auto;
+  margin-top: 5%;
+  display: flex;
+  max-width: 70%;
+}
+body .article .logo {
+  margin: 2%;
+  max-width: 30%;
+}
+body p {
+  font-size: 18px;
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 300;
+  color: #C4C6C7;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+body h3 {
+  margin-left: 5%;
+  margin-top: 5%;
+}
+body h3 a {
+  color: #b3032f;
+  font-weight: 300;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 30px;
+  color: #66FCF1;
+}
+body h3 a:hover {
+  color: #66FCF1;
+}
+/*# sourceMappingURL=./post.css.map */
