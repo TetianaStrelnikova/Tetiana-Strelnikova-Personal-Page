@@ -124,10 +124,6 @@ header p {
   display: flex;
   max-width: 70%;
 }
-.article .logo {
-  margin: 2%;
-  max-width: 30%;
-}
 p {
   font-size: 18px;
   font-family: 'Source Code Pro', monospace;
@@ -136,6 +132,7 @@ p {
   margin-left: 5%;
 }
 h3 {
+  max-width: 80%;
   margin-left: 5%;
   margin-top: 0%;
 }
@@ -144,6 +141,7 @@ h3 a {
   font-weight: 300;
   font-family: 'Source Code Pro', monospace;
   font-size: 30px;
+  color: #6C63FF;
 }
 h3 a:hover {
   color: #66FCF1;
@@ -155,5 +153,15 @@ h3 a:hover {
 }
 footer {
   min-height: 300px;
+}
+ul {
+  margin-left: 10%;
+}
+ul li {
+  font-size: 18px;
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 300;
+  color: #C4C6C7;
+  margin: 3%;
 }
 /*# sourceMappingURL=./blog.css.map */

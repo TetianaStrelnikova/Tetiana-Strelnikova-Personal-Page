@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="Tetiana Strelnikova | TATI in IT Blog | How to debug a functio?...Think Python. Postconditions. Preconditions. Return value.
+        ">
+  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!--Font awesome-->
+    <script src="https://kit.fontawesome.com/7e53c08174.js" crossorigin="anonymous"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="styles/post.css">
+    <title>Tetiana Strelnikova | How to debug a functio?...Think Python.</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <!--Navbar-->
+    <nav class="navbar navbar-expand-md d-flex w-100 mb-5 ms-2">
+        <div class="container-fluid" >
+          
+          <button class="navbar-toggler menuimage" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <img class="menulogo" src="images/blog-logo.PNG" class="" width="150px" alt="Black cat">
+          </button>
+          
+          
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                  <li class="nav-item"><a class="nav-link" href="project.html">Projects</a></li>
+                  <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                  <!--<li class="nav-item"><a class="nav-link " href="index.html#contact">Contacts</a></li>-->
+              </ul>
+          </div>
+  
+        </div>
+      </nav>
+       <section class="article">
+        
+        <div class="articletext">
+        <header >
+            <div ><img class="logo img-fluid"src="images/post_logo/bug2.png" alt="How to debug" width="500px"></div>
+            <h3><a href="post_2.html"> >>>How to debug a function?..Think Python. Postconditions. Preconditions. Return value.</a></h3></header>
+        <main>
+    <p>Debugging is an everyday task for every programmer. So how to debug a program like a computer scientist? 
+
+    </p><p>   Professional programmer use three steps to debug their functions
+        <ul><li>Preconditions </li>
+            <li>Postconditions </li>
+            <li>Return value </li>
+        </ul>
+
+    </p><p>    "Breaking a large program into smaller functions creates natural checkpoints for debugging.
+        If a function is not working, there are three possibilities to consider: 
+        
+    </p>
+    <h5>A precondition is violated. </h5>
+    <p>   # Precondition means something that must be true at the start of a function in order for it to work correctly.
+
+    </p><p>    for Example:
+        <div class="image img-fluid rounded text-center"><img src="images/post_2_images/2.png" alt="precondition debugging example" width="800px" ></div>
+
+    </p><p> I get into trouble. Simply because I forgot one required argument.  I  should always make sure that the preconditions are satisfied.
+    </p><p>  I will add the second required argument:
+        <div class="image img-fluid rounded text-center"><img src="images/post_2_images/4.png" alt="precondition debugging example" width="800px" ></div>
+                
+    </p><p>   Here I just need to change the order of the arguments. Position always counts.
+
+        <div class="image img-fluid rounded text-center"><img src="images/post_2_images/3.png" alt="precondition debugging example" width="800px" ></div>
+          
+    </p><p>  Here I Need to check the syntax (I am doing this mistake every time) true != True
+        <div class="image img-fluid rounded text-center"><img src="images/post_2_images/5.png" alt="precondition debugging example" width="800px" ></div>
+        
+    </p><p>    Now it should be OK
+        <div class="image img-fluid rounded text-center"><img src="images/post_2_images/4.png" alt="precondition debugging example" width="800px" ></div>
+          
+
+    </p>
+    <h5>A postcondition is violated.</h5>
+    <p>    There is something wrong with the function. Postcondition id something that the function guarantees is true when it finishes. 
+        
+    </p><p>   Example:
+        Function call sends string argument,  'if' condition doesn't catch this error and passes the data to the store.
+        <div class="image img-fluid rounded text-center"><img src="images/post_2_images/6.png" alt="precondition debugging example" width="800px" ></div>
+        <div class="image img-fluid rounded text-center mt-2"><img src="images/post_2_images/8.png" alt="precondition debugging example" width="800px" ></div>
+          
+    </p><p>    Function call sends integer argument which is 1, which is True😄,
+
+        'if' condition doesn't catch this error and passes the data to the store.
+        <div class="image img-fluid rounded text-center"><img src="images/post_2_images/7.png" alt="precondition debugging example" width="800px" ></div>
+       
+    </p>
+    <h5> Return value</h5>
+    <p>   There is something wrong with the return value or the way it is being used.
+        # the problems are in the result
+    </p>
+</p><p>  In the following example There is return from the "user" function is None, So error message occurs
+    <div class="image img-fluid rounded text-center mt-2"><img src="images/post_2_images/9.png" alt="precondition debugging example" width="800px" ></div>
+      
+</p>
+</p><p>  In the following function "user" does not return anything printable..it returns None
+
+    <div class="image img-fluid rounded text-center mt-2"><img src="images/post_2_images/10.png" alt="precondition debugging example" width="800px" ></div>
+      
+</p>
+</p><p>   Debugged one
+    <div class="image img-fluid rounded text-center mt-2"><img src="images/post_2_images/11.png" alt="precondition debugging example" width="800px" ></div>
+      
+</p>
+</p><p> Downey, A. (2015). Think Python: How to think like a computer scientist. Green Tea Press.
+    https://greenteapress.com/thinkpython2/thinkpython2.pdf
+      
+</p></div></main>
+     </section>
+     <footer></footer></div>
+</body>
+</html>

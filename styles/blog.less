@@ -50,17 +50,15 @@ header{
     margin-top: 5%;
     display: flex;
     max-width: 70%;
-    .logo{
-        margin: 2%;
-        max-width: 30%
-    }}
- 
+}
     p{.p;
         margin-left: 5%;}
-    h3{
+    h3{ max-width: 80%;
         margin-left: 5%;
         margin-top: 0%;
+
         a{.h3;
+            color: @purple;
         &:hover{color: @blog-heading;}}}
 .projectlinks{
     i{
@@ -69,4 +67,10 @@ header{
     margin-right: 10px;}}
 footer{
     min-height: 300px;
+}
+ul{
+    margin-left: 10%;
+    li{ .p;
+        margin: 3%;
+    }
 }

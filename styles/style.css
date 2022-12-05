@@ -13,7 +13,9 @@
     
 
 }
-
+body{background-color:var(--color-bg-grey);}
+footer{background-color:var(--background-2);
+border-top: 3px solid var(--color-header-border);}
 .container{
     max-width: 100%;
     height: auto;
