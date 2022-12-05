@@ -170,4 +170,7 @@ header .logo {
   animation: blink 0.7s infinite alternate;
   border-radius: 50%;
 }
+.more {
+  color: #6C63FF;
+}
 /*# sourceMappingURL=./post.css.map */

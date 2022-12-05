@@ -73,6 +73,7 @@ header .logo {
 }
 header .logo img {
   border-radius: 50%;
+  max-width: 200px;
 }
 header h1 {
   font-weight: 100;
@@ -163,5 +164,29 @@ ul li {
   font-weight: 300;
   color: #C4C6C7;
   margin: 3%;
+}
+nav .navbar-toggler {
+  border-color: #0d304a;
+}
+nav .menuimage:hover {
+  transform: rotate(360deg);
+}
+nav .nav-link {
+  color: white;
+  font-size: 25px;
+  font-family: open-sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0 20px;
+  transition: all 300ms ease;
+  padding-bottom: 10px;
+}
+nav .nav-link:hover {
+  color: var(--links);
+  text-decoration: underline solid 2px #ff85d6;
+}
+nav .navbar {
+  background: var(--color-bg-grey);
+  border-bottom: 4px solid #961d6e;
 }
 /*# sourceMappingURL=./blog.css.map */
