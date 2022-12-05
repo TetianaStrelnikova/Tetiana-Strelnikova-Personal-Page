@@ -139,7 +139,7 @@ nav .nav-link {
 }
 nav .nav-link:hover {
   color: var(--links);
-  text-decoration: underline solid 2px #ff85d6;
+  text-decoration: underline solid 2px #6C63FF;
 }
 nav .navbar {
   background: var(--color-bg-grey);
