@@ -72,6 +72,27 @@ header .logo {
   -webkit-animation: blink 0.7s infinite alternate;
   animation: blink 0.7s infinite alternate;
 }
+@media (max-width: 1000px) {
+  header .logo {
+    max-height: 120px !important;
+    max-width: 120px !important;
+  }
+}
+@media (max-width: 780px) {
+  header .logo {
+    display: none;
+  }
+}
+header .logo img {
+  max-height: 150px !important;
+  max-width: 150px !important;
+}
+@media (max-width: 1000px) {
+  header .logo img {
+    max-height: 120px !important;
+    max-width: 120px !important;
+  }
+}
 header .logo img {
   border-radius: 50%;
   max-width: 200px;
@@ -83,6 +104,11 @@ header h1 {
   color: #66FCF1;
   text-shadow: 0 0 2px #fff, 0 0 10px #fff, 0 0 40px #fff, 0 0 80px #45A29F, 0 0 150px #45A29F, 0 0 200px #45A29F, 0 0 300px #45A29F, 0 0 500px #45A29F;
 }
+@media (max-width: 1000px) {
+  header h1 {
+    font-size: 40px;
+  }
+}
 header p {
   margin-left: 5%;
   max-width: 60%;
@@ -91,7 +117,13 @@ header p {
   font-weight: 300;
   color: #C4C6C7;
 }
+@media (max-width: 1000px) {
+  header p {
+    font-size: 14px;
+  }
+}
 .hello {
+  max-width: 70%;
   margin-left: 20%;
   margin-top: 5%;
 }
@@ -103,13 +135,22 @@ header p {
   color: #66FCF1;
   text-shadow: 0 0 2px #fff, 0 0 10px #fff, 0 0 40px #fff, 0 0 80px #45A29F, 0 0 150px #45A29F, 0 0 200px #45A29F, 0 0 300px #45A29F, 0 0 500px #45A29F;
 }
+@media (max-width: 1000px) {
+  .hello h2 {
+    font-size: 25px;
+  }
+}
 .hello p {
   font-size: 18px;
   font-family: 'Source Code Pro', monospace;
   font-weight: 300;
   color: #C4C6C7;
   margin-left: 5%;
-  max-width: 70%;
+}
+@media (max-width: 1000px) {
+  .hello p {
+    font-size: 12px;
+  }
 }
 .article {
   padding: 2% 1%;
@@ -126,12 +167,39 @@ header p {
   display: flex;
   max-width: 70%;
 }
+@media (max-width: 400px) {
+  .article {
+    max-width: 90%;
+    flex-direction: column;
+  }
+}
+@media (max-width: 1500px) {
+  .article {
+    max-width: 85%;
+  }
+  .article img {
+    max-width: 200px;
+  }
+}
+@media (max-width: 759px) {
+  .article {
+    max-width: 90%;
+  }
+  .article img {
+    max-width: 200px;
+  }
+}
 p {
   font-size: 18px;
   font-family: 'Source Code Pro', monospace;
   font-weight: 300;
   color: #C4C6C7;
   margin-left: 5%;
+}
+@media (max-width: 1000px) {
+  p {
+    font-size: 12px;
+  }
 }
 h3 {
   max-width: 80%;
@@ -144,6 +212,16 @@ h3 a {
   font-family: 'Source Code Pro', monospace;
   font-size: 30px;
   color: #6C63FF;
+}
+@media (max-width: 1000px) {
+  h3 a {
+    font-size: 25px;
+  }
+}
+@media (max-width: 1000px) {
+  h3 a {
+    font-size: 18px;
+  }
 }
 h3 a:hover {
   color: #66FCF1;
@@ -165,6 +243,11 @@ ul li {
   font-weight: 300;
   color: #C4C6C7;
   margin: 3%;
+}
+@media (max-width: 1000px) {
+  ul li {
+    font-size: 12px;
+  }
 }
 nav .navbar-toggler {
   border-color: #0d304a;
@@ -190,7 +273,19 @@ nav .navbar {
   background: var(--color-bg-grey);
   border-bottom: 4px solid #961d6e;
 }
+nav .menulogo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-top: 40px;
+  color: #fff;
+  box-shadow: 0 0 2px #fff, 0 0 10px #fff, 0 0 20px #45A29F, 0 0 30px #45A29F, 0 0 40px #45A29F, 0 0 50px #45A29F;
+  -webkit-animation: blink 0.7s infinite alternate;
+  animation: blink 0.7s infinite alternate;
+}
 footer {
+  display: flex;
+  justify-content: end;
   font-size: 18px;
   font-family: 'Source Code Pro', monospace;
   font-weight: 300;
@@ -198,12 +293,22 @@ footer {
   align-items: baseline;
   margin: 6%;
 }
-footer img {
+@media (max-width: 750px) {
+  footer {
+    justify-content: center   !important;
+  }
+}
+footer .bloglogofooter img {
   color: #fff;
   box-shadow: 0 0 2px #fff, 0 0 10px #fff, 0 0 20px #45A29F, 0 0 30px #45A29F, 0 0 40px #45A29F, 0 0 50px #45A29F;
   -webkit-animation: blink 0.7s infinite alternate;
   animation: blink 0.7s infinite alternate;
   border-radius: 50%;
+}
+@media (max-width: 450px) {
+  footer .bloglogofooter {
+    display: none;
+  }
 }
 footer i {
   margin: 2%;

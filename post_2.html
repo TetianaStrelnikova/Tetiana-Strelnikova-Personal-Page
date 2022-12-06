@@ -31,8 +31,8 @@
     <nav class="navbar navbar-expand-md d-flex w-100 mb-5 ms-2">
         <div class="container-fluid" >
           
-          <button class="navbar-toggler menuimage" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <img class="menulogo" src="images/blog-logo.PNG" class="" width="150px" alt="Black cat">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <img class="menulogo img-fluid" src="images/blog-logo.PNG"  alt="TATI in IT Blog">
           </button>
           
           
@@ -51,12 +51,12 @@
         
         <div class="articletext">
         <header >
-            <div ><img class="logo img-fluid"src="images/post_logo/bug2.png" alt="How to debug" width="500px"></div>
+            <div class="logo"><img class="logo img-fluid"src="images/post_logo/bug2.png" alt="How to debug" ></div>
             <h3><a href="post_2.html"> >>>How to debug a function?..Think Python. Postconditions. Preconditions. Return value.</a></h3></header>
         <main>
-            <div class=" rounded  text-end me-5"><img class="image-fluide me-5"src="images/post_2_images/2.png" alt="precondition debugging example" width="800px" ></div>
+           
     <p>Debugging is an everyday task for every programmer. So how to debug a program like a computer scientist? 
-
+        <div class="  articleimage"><img class="articleimage img-fluid rounded me-5"src="images/post_2_images/2.png" alt="precondition debugging example"  ></div>
     </p><p>   Professional programmer use three steps to debug their functions
         <ul><li>Preconditions </li>
             <li>Postconditions </li>
@@ -71,21 +71,21 @@
     <p>   # Precondition means something that must be true at the start of a function in order for it to work correctly.
 
     </p><p>    for Example:
-        <div class="rounded text-center"><img class="img-fluid"src="images/post_2_images/1-1.png" alt="precondition debugging example" width="800px" ></div>
+        <div class=" articleimage text-center"><img class="img-fluid rounded articleimage"src="images/post_2_images/1-1.png" alt="precondition debugging example"  ></div>
 
     </p><p> I get into trouble. Simply because I forgot one required argument.  I  should always make sure that the preconditions are satisfied.
     </p><p>  I will add the second required argument:
-        <div class=" rounded text-center"><img class="img-fluid" src="images/post_2_images/4.png" alt="precondition debugging example" width="800px" ></div>
+        <div class="  articleimage text-center"><img class="img-fluid rounded articleimage" src="images/post_2_images/4.png" alt="precondition debugging example"  ></div>
                 
     </p><p>   Here I just need to change the order of the arguments. Position always counts.
 
-        <div class=" rounded text-center"><img class="img-fluid" src="images/post_2_images/3.png" alt="precondition debugging example" width="800px" ></div>
+        <div class="  articleimage text-center"><img class="img-fluid rounded articleimage" src="images/post_2_images/3.png" alt="precondition debugging example"  ></div>
           
     </p><p>  Here I Need to check the syntax (I am doing this mistake every time) true != True
-        <div class=" rounded text-center"><img class="img-fluid" src="images/post_2_images/5.png" alt="precondition debugging example" width="800px" ></div>
+        <div class="  articleimage text-center"><img class="img-fluid rounded articleimage" src="images/post_2_images/5.png" alt="precondition debugging example"  ></div>
         
     </p><p>    Now it should be OK
-        <div class=" rounded text-center"><img class="img-fluid" src="images/post_2_images/4.png" alt="precondition debugging example" width="800px" ></div>
+        <div class="  articleimage text-center"><img class="img-fluid rounded articleimage" src="images/post_2_images/4.png" alt="precondition debugging example"  ></div>
           
 
     </p>
@@ -94,13 +94,13 @@
         
     </p><p>   Example:
         Function call sends string argument,  'if' condition doesn't catch this error and passes the data to the store.
-        <div class=" rounded text-center"><img class="img-fluid" src="images/post_2_images/6.png" alt="precondition debugging example" width="800px" ></div>
-        <div class=" rounded text-center mt-2"><img class="img-fluid" src="images/post_2_images/8.png" alt="precondition debugging example" width="800px" ></div>
+        <div class="  articleimage text-center"><img class="img-fluid rounded articleimage" src="images/post_2_images/6.png" alt="precondition debugging example"  ></div>
+        <div class="  articleimage text-center mt-2"><img class="img-fluid rounded articleimage" src="images/post_2_images/8.png" alt="precondition debugging example"  ></div>
           
     </p><p>    Function call sends integer argument which is 1, which is True😄,
 
         'if' condition doesn't catch this error and passes the data to the store.
-        <div class=" rounded text-center"><img class="img-fluid" src="images/post_2_images/7.png" alt="precondition debugging example" width="800px" ></div>
+        <div class="  articleimage text-center"><img class="img-fluid rounded articleimage" src="images/post_2_images/7.png" alt="precondition debugging example"  ></div>
        
     </p>
     <h5> Return value</h5>
@@ -108,27 +108,28 @@
         # the problems are in the result
     </p>
 </p><p>  In the following example There is return from the "user" function is None, So error message occurs
-    <div class=" rounded text-center mt-2"><img class="img-fluid" src="images/post_2_images/9.png" alt="precondition debugging example" width="800px" ></div>
+    <div class="  articleimage text-center mt-2"><img class="img-fluid rounded articleimage" src="images/post_2_images/9.png" alt="precondition debugging example"  ></div>
       
 </p>
 </p><p>  In the following function "user" does not return anything printable..it returns None
 
-    <div class="rounded text-center mt-2"><img class="img-fluid" src="images/post_2_images/10.png" alt="precondition debugging example" width="800px" ></div>
+    <div class=" articleimage text-center mt-2"><img class="img-fluid rounded articleimage" src="images/post_2_images/10.png" alt="precondition debugging example"  ></div>
       
 </p>
 </p><p>   Debugged one
-    <div class="rounded text-center mt-2"><img class="img-fluid" src="images/post_2_images/11.png" alt="precondition debugging example" width="800px" ></div>
+    <div class=" articleimage text-center mt-2"><img class="img-fluid rounded articleimage" src="images/post_2_images/11.png" alt="precondition debugging example"  ></div>
       
 </p>
 
 <p class="m-1 more">To learn more <h5 class="m-0"><a href="post_1.html" title="Where to start? How to choose the programming courses?">>>>Where to start? How to choose the programming courses? Which language should I learn? Lets talk...</a></h5></p>
-</p><p>References:  Downey, A. (2015). Think Python: How to think like a computer scientist. Green Tea Press.
-    https://greenteapress.com/thinkpython2/thinkpython2.pdf
+</p><p>References:  Downey, A. (2015).  <a href=" https://greenteapress.com/thinkpython2/thinkpython2.pdf" title="Think Python">
+    Think Python: How to think like a computer scientist.</a> Green Tea Press.
+   
       
 </p></div></main>
      </section>
-     <footer class="d-flex justify-content-end">
-        <div>
+     <footer >
+        <div class="bloglogofooter">
             <a  class="m-3 p-3" href="blog.html" title="TATI in IT | Blog">
             <img class=" menulogo img-fluid" src="images/blog-logo.PNG" width="100px" alt="Tetiana Strelnikova | Main Page">
             </a>  

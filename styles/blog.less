@@ -5,8 +5,7 @@
 body{
     background-color: @blog-background;
     margin: 0;
-    a{.link}
-}            
+    a{.link}}            
 header{
     margin-left: 10%;
     margin-top: 5%;
@@ -19,27 +18,40 @@ header{
         border-width: 1px;
         border-color: lighten(@blog-background,60%);
         margin-bottom: 2%;
-        
+        @media(max-width:1000px){max-height: 120px !important;
+            max-width: 120px !important;}
+        @media(max-width:780px){ display: none;
+                }
+        img{max-height: 150px !important;
+        max-width: 150px !important;
+        @media(max-width:1000px){max-height: 120px !important;
+            max-width: 120px !important;}}
         .shadow;
         
     
     img{
     border-radius: 50%;
-max-width: 200px}
+    max-width: 200px}
     }
     h1{.h1;
-    .neonText}
-    p{margin-left: 5%;
-       max-width: 60%;
-        .p}}
-.hello{margin-left: 20%;
+    .neonText;
+    @media(max-width:1000px){ font-size: 40px;}}
+    p{
+    margin-left: 5%;
+    max-width: 60%;
+    
+    .p;
+    @media(max-width:1000px){ font-size: 14px;}}}
+.hello{
+    max-width: 70%;
+    margin-left: 20%;
     margin-top: 5%;
     h2{.h2;
-    .neonText}
+    .neonText;
+    @media(max-width:1000px){ font-size: 25px;}}
     p{.p;
-        margin-left: 5%;
-    max-width: 70%;}
-}
+    margin-left: 5%;
+    @media(max-width:1000px){ font-size: 12px;}}}
 .article{
     max-width: 70%;
     padding: 2% 1%;
@@ -52,31 +64,43 @@ max-width: 200px}
     margin-top: 5%;
     display: flex;
     max-width: 70%;
-}
-    p{.p;
-        margin-left: 5%;}
-    h3{ max-width: 80%;
+    @media(max-width: 400px){
+        max-width: 90%;
+        flex-direction: column;}
+    @media(max-width: 1500px){
+        max-width: 85%;
+        img{max-width: 200px;}
+    }
+    @media(max-width: 759px){
+        max-width: 90%;
+        img{max-width: 200px;}
+    }}
+p{
+    .p;
+    margin-left: 5%;
+    @media(max-width:1000px){ font-size: 12px;}}
+h3{ 
+    max-width: 80%;
         margin-left: 5%;
         margin-top: 0%;
-
+        
         a{.h3;
             color: @purple;
+            @media(max-width:1000px){ font-size: 25px;}
+            @media(max-width:1000px){ font-size: 18px;}
         &:hover{color: @blog-heading;}}}
 .projectlinks{
     i{
-        font-size: 22px;
-        margin-top: 10px;
+    font-size: 22px;
+    margin-top: 10px;
     margin-right: 10px;}}
 footer{
-    min-height: 300px;
-}
+    min-height: 300px;}
 ul{
     margin-left: 10%;
     li{ .p;
-        margin: 3%;
-    }
-}
-
+    margin: 3%;
+    @media(max-width:1000px){ font-size: 12px;}}}
 nav{
 .navbar-toggler{
     border-color:  #0d304a;}
@@ -96,14 +120,28 @@ nav{
     text-decoration: underline solid 2px @purple;}
 .navbar{
     background: var(--color-bg-grey);
-    border-bottom: 4px solid @color-header-border;}}
-
+    border-bottom: 4px solid @color-header-border;}
+.menulogo{
+   width: 120px;
+   height: 120px;
+   border-radius: 50%;
+   margin-top: 40px;
+   .shadow;
+}}
 footer{
+    display: flex;
+    justify-content: end;
+    @media(max-width:750px){justify-content: center   !important;}
+   
+   .bloglogofooter{ 
     img{.shadow;
-        border-radius: 50%;}
+        border-radius: 50%;
+   }
+    @media(max-width:450px){display: none;}}
         .p;
         align-items: baseline;
         margin: 6%;
+        
     i{
          margin: 2%;
          font-size: 30px;

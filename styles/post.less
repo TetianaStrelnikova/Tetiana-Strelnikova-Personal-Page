@@ -16,50 +16,55 @@ body {
     margin-top: 5%;
     display: flex;
     max-width: 85%;
-    .logo{
-        width: 200px;
-        padding-left: 5%;
-        
-    }}
+    @media(max-width: 1000px){flex-direction: column;
+        max-width: 95%;}
+    .articleimage{
+        max-width: 1000px;
+        margin: 0 auto;
+        @media(max-width:1200px){max-width:700px;}
+        @media(max-width:1000px){max-width:600px;}
+        @media(max-width:800px){max-width:500px;}
+        @media(max-width:700px){max-width:400px;}
+        @media(max-width:600px){max-width:300px;}
+
+    }
+   }
  
-    p{.p;
-        margin-top: 5%;
-        margin-left: 5%;
-    }
-    h3{ margin-left: 5%;
-        margin-top: 5%;
-        text-transform: capitalize;
-        a{.h3;
-            color:@blog-heading;
-        &:hover{color: @blog-heading;}}
-    }
-    h5{  text-align: center;
-        text-transform: capitalize;
+p{
+    .p;
+    margin-top: 5%;
+    margin-left: 5%;
+    @media(max-width:800px){font-size: 12px;}}
+h3{
+    margin-left: 5%;
+    margin-top: 5%;
+    text-transform: capitalize;
+    a{
         .h3;
-        margin-top: 3%;
-        font-size: 20px;
         color:@blog-heading;
-        font-weight: 500;
-    }
-}
+        @media(max-width:300px) { font-size: 18px; }
+        @media(max-width:800px){font-size: 20px;}
+    &:hover{color: @blog-heading; }}}
+h5{ 
+    text-align: center;
+    text-transform: capitalize;
+    .h3;
+    margin-top: 3%;
+    font-size: 20px;
+    color:@blog-heading;
+    font-weight: 500;
+    @media(max-width:300px) { font-size: 18px; }}}
 ul{
     margin-left: 10%;
     li{ .p;
-        margin: 3%;
-    }
-}
-.image{ 
-   
-    img{
-        
-        max-width: 1000px;
-    }
-}
-nav{.navbar-toggler{
+        margin: 3%;}}
+
+nav{
+    .navbar-toggler{
     border-color:  #0d304a;}
-.menuimage:hover{
+    .menuimage:hover{
     transform: rotate(360deg);}
-.nav-link{
+    .nav-link{
     color: white;
     font-size: 25px;
     font-family: open-sans,sans-serif;
@@ -68,42 +73,57 @@ nav{.navbar-toggler{
     margin: 0 20px;
     transition: all 300ms ease;
     padding-bottom: 10px;}
-.nav-link:hover{
+    .nav-link:hover{
     color: @links;
     text-decoration: underline solid 2px @purple;}
-.navbar{
+    .navbar{
     background: var(--color-bg-grey);
-    border-bottom: 4px solid @color-header-border;}}
-header{
-    align-items: baseline;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-     h3{
+    border-bottom: 4px solid @color-header-border;}
+    .menulogo{
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        margin-top: 40px;
+        .shadow;
+     }}
+header{ 
+    margin-bottom: 10%;
         text-align: center;
-    align-items: center;
-    display: inline-block;
-    max-width: 80%;
-    margin-right: 0;
-    margin-left: 0;
-    
-}
-    
-    .logo{
-            max-width: 100%;
-            height: auto;}
-}
-.menulogo{
-    .shadow;
-    border-radius: 50%;
-}
-.more{
-    color: @purple;
+        align-items: baseline;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        @media(max-width:1000px) { flex-direction: column;}
+     h3{
+        align-items: center;
+        display: inline-block;
+        max-width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+        @media(max-width:300px) { font-size: 18px; }
    }
+    .logo{ 
+        margin: 0 auto;
+        max-width: 500px;
+        height: auto;
+        @media(max-width:1500px) { max-width: 300px; }
+        @media(max-width:1000px) { max-width: 300px; }
+        @media(max-width:450px) { display: none; }}}
+
+.more{
+    color: @purple;}
 
 footer{
+    display: flex;
+    justify-content: end;
+    @media(max-width: 750px){justify-content: center;}
+    .bloglogofooter{ 
+        @media(max-width:500px){display: none;}
     img{.shadow;
-        border-radius: 50%;}
+         border-radius: 50%;
+         width: 120px;
+         height: 120px;
+         }}
         .p;
         align-items: baseline;
         margin: 6%;
