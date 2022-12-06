@@ -137,6 +137,7 @@ header p {
   max-width: 70%;
   margin-left: 20%;
   margin-top: 5%;
+  margin-bottom: 10%;
 }
 .hello h2 {
   color: #45A29F;
@@ -178,25 +179,45 @@ header p {
   display: flex;
   max-width: 70%;
 }
-@media (max-width: 400px) {
+@media (max-width: 800px) {
   .article {
-    max-width: 90%;
     flex-direction: column;
+  }
+  .article h3 {
+    text-align: center;
+    max-width: 90%;
+  }
+  .article p {
+    font-size: 12px;
   }
 }
 @media (max-width: 1500px) {
   .article {
     max-width: 85%;
   }
-  .article img {
-    max-width: 200px;
-  }
 }
 @media (max-width: 759px) {
   .article {
     max-width: 90%;
   }
-  .article img {
+}
+.article .articlelogo {
+  max-width: 400px;
+  margin: 0 auto;
+}
+@media (max-width: 1200px) {
+  .article .articlelogo {
+    max-width: 300px;
+  }
+}
+@media (max-width: 800px) {
+  .article .articlelogo {
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+}
+@media (max-width: 500px) {
+  .article .articlelogo {
     max-width: 200px;
   }
 }
