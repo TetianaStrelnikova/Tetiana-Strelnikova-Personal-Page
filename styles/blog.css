@@ -350,6 +350,7 @@ footer i:hover {
   .projectarticle .projectlogo {
     margin: 0 auto;
     margin-bottom: 5%;
+    margin-top: 10%;
   }
 }
 @media (max-width: 400px) {
@@ -360,6 +361,11 @@ footer i:hover {
 @media (max-width: 400px) {
   .projectarticle .projectlogo {
     max-width: 80px;
+  }
+}
+@media (max-width: 600px) {
+  .projectarticle .projectlinks {
+    margin: 5%;
   }
 }
 .projectarticle .projectlinks i {
