@@ -9,6 +9,7 @@ body{
 header{
     margin-left: 10%;
     margin-top: 5%;
+    margin-bottom: 2%;
     .logo{
         max-height: 150px;
         max-width: 150px;
@@ -35,7 +36,9 @@ header{
     }
     h1{.h1;
     .neonText;
-    @media(max-width:1000px){ font-size: 40px;}}
+    @media(max-width:1000px){ font-size: 40px;}
+    @media(max-width:600px){ font-size: 35px;}
+    @media(max-width:600px){ font-size: 25px;}}
     p{
     margin-left: 5%;
     max-width: 60%;
@@ -89,24 +92,18 @@ h3{
             @media(max-width:1000px){ font-size: 25px;}
             @media(max-width:1000px){ font-size: 18px;}
         &:hover{color: @blog-heading;}}}
-.projectlinks{
-    i{
-    font-size: 22px;
-    margin-top: 10px;
-    margin-right: 10px;}}
-footer{
-    min-height: 300px;}
+
 ul{
     margin-left: 10%;
     li{ .p;
     margin: 3%;
     @media(max-width:1000px){ font-size: 12px;}}}
 nav{
-.navbar-toggler{
+    .navbar-toggler{
     border-color:  #0d304a;}
-.menuimage:hover{
+    .menuimage:hover{
     transform: rotate(360deg);}
-.nav-link{
+    .nav-link{
     color: white;
     font-size: 25px;
     font-family: open-sans,sans-serif;
@@ -115,36 +112,65 @@ nav{
     margin: 0 20px;
     transition: all 300ms ease;
     padding-bottom: 10px;}
-.nav-link:hover{
+    .nav-link:hover{
     color: var(--links);
     text-decoration: underline solid 2px @purple;}
-.navbar{
+    .navbar{
     background: var(--color-bg-grey);
     border-bottom: 4px solid @color-header-border;}
-.menulogo{
+    .menulogo{
    width: 120px;
    height: 120px;
    border-radius: 50%;
    margin-top: 40px;
    .shadow;
+   transition: all 300ms ease;
+         &:hover{ transform: scale(1.4)}
 }}
 footer{
     display: flex;
     justify-content: end;
-    @media(max-width:750px){justify-content: center   !important;}
-   
-   .bloglogofooter{ 
+    @media(max-width: 750px){justify-content: center;}
+    .bloglogofooter{ 
+        @media(max-width:500px){display: none;}
     img{.shadow;
-        border-radius: 50%;
-   }
-    @media(max-width:450px){display: none;}}
+         border-radius: 50%;
+         width: 120px;
+         height: 120px;
+         transition: all 300ms ease;
+         &:hover{ transform: scale(1.4)}
+         }}
         .p;
         align-items: baseline;
         margin: 6%;
-        
     i{
          margin: 2%;
          font-size: 30px;
          transition: all 300ms;
          &:hover{transform: scale(1.5); }}}
     
+
+.projectarticle{
+    @media (max-width:600px) {
+       flex-direction: column;
+    h3{text-align: center;
+    }
+    p{font-size: 12px;}}
+    .projectlogo{
+        max-width: 200px !important;
+        height: auto;
+
+        @media (max-width:600px) {    
+        margin: 0 auto;
+        margin-bottom: 5%;}    
+       @media (max-width:400px) {
+       max-width: 100px;}   
+       @media (max-width:400px) {
+        max-width: 80px;}
+        }  
+    .projectlinks{
+        i{
+        font-size: 22px;
+        margin-top: 10px;
+        margin-right: 10px;}}
+    }

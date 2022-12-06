@@ -57,6 +57,7 @@ body a:hover {
 header {
   margin-left: 10%;
   margin-top: 5%;
+  margin-bottom: 2%;
 }
 header .logo {
   max-height: 150px;
@@ -107,6 +108,16 @@ header h1 {
 @media (max-width: 1000px) {
   header h1 {
     font-size: 40px;
+  }
+}
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 35px;
+  }
+}
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 25px;
   }
 }
 header p {
@@ -226,14 +237,6 @@ h3 a {
 h3 a:hover {
   color: #66FCF1;
 }
-.projectlinks i {
-  font-size: 22px;
-  margin-top: 10px;
-  margin-right: 10px;
-}
-footer {
-  min-height: 300px;
-}
 ul {
   margin-left: 10%;
 }
@@ -282,6 +285,10 @@ nav .menulogo {
   box-shadow: 0 0 2px #fff, 0 0 10px #fff, 0 0 20px #45A29F, 0 0 30px #45A29F, 0 0 40px #45A29F, 0 0 50px #45A29F;
   -webkit-animation: blink 0.7s infinite alternate;
   animation: blink 0.7s infinite alternate;
+  transition: all 300ms ease;
+}
+nav .menulogo:hover {
+  transform: scale(1.4);
 }
 footer {
   display: flex;
@@ -295,7 +302,12 @@ footer {
 }
 @media (max-width: 750px) {
   footer {
-    justify-content: center   !important;
+    justify-content: center;
+  }
+}
+@media (max-width: 500px) {
+  footer .bloglogofooter {
+    display: none;
   }
 }
 footer .bloglogofooter img {
@@ -304,11 +316,12 @@ footer .bloglogofooter img {
   -webkit-animation: blink 0.7s infinite alternate;
   animation: blink 0.7s infinite alternate;
   border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  transition: all 300ms ease;
 }
-@media (max-width: 450px) {
-  footer .bloglogofooter {
-    display: none;
-  }
+footer .bloglogofooter img:hover {
+  transform: scale(1.4);
 }
 footer i {
   margin: 2%;
@@ -317,5 +330,41 @@ footer i {
 }
 footer i:hover {
   transform: scale(1.5);
+}
+@media (max-width: 600px) {
+  .projectarticle {
+    flex-direction: column;
+  }
+  .projectarticle h3 {
+    text-align: center;
+  }
+  .projectarticle p {
+    font-size: 12px;
+  }
+}
+.projectarticle .projectlogo {
+  max-width: 200px !important;
+  height: auto;
+}
+@media (max-width: 600px) {
+  .projectarticle .projectlogo {
+    margin: 0 auto;
+    margin-bottom: 5%;
+  }
+}
+@media (max-width: 400px) {
+  .projectarticle .projectlogo {
+    max-width: 100px;
+  }
+}
+@media (max-width: 400px) {
+  .projectarticle .projectlogo {
+    max-width: 80px;
+  }
+}
+.projectarticle .projectlinks i {
+  font-size: 22px;
+  margin-top: 10px;
+  margin-right: 10px;
 }
 /*# sourceMappingURL=./blog.css.map */
