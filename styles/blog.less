@@ -111,7 +111,9 @@ ul{
     li{ .p;
     margin: 3%;
     @media(max-width:1000px){ font-size: 12px;}}}
-nav{
+nav{opacity: 0.9;
+    border-bottom: solid 4px @yellow;
+    
     .navbar-toggler{
     border-color:  #0d304a;}
     .menuimage:hover{
@@ -195,4 +197,43 @@ footer{
         font-size: 22px;
         margin-top: 10px;
         margin-right: 10px;}}
+    }
+    .sub-menu{
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        position:absolute;
+        top: 80px;
+        background-color: @color-bg-grey;
+        margin-left: 0px;
+
+        
+        opacity: 0.8;
+       
+    }
+    @media (max-width:768px){
+            .nav-item ul li{
+                display: block;
+            }
+            .sub-menu{
+                display:block;
+                position:relative;
+                top :0px;
+                max-width: fit-content;
+                
+            }
+    }
+    .nav-item:hover ul li{ 
+        display: block;
+    
+    }
+    .nav-item:hover ul{ 
+        border: @yellow 3px solid;
+        
+    
+    }
+    .nav-item ul li{
+        display: none;
+        margin-left: 0;
+        transition: all ease-in-out 800ms;
     }
